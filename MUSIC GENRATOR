@@ -1,0 +1,27 @@
+import random
+from music21 import converter, instrument, note, stream
+
+midi = converter.parse(r"C:\Users\HP\Downloads\Ed Sheeran - Shape of You  (midi by Carlo Prato) (www.cprato.com).mid"
+)
+
+notes = []
+
+for element in midi.flatten().notes:
+    if isinstance(element, note.Note):
+        notes.append(str(element.pitch))
+
+generated = []
+
+for i in range(100):
+    generated.append(random.choice(notes))
+
+output = stream.Stream()
+
+for pattern in generated:
+    new_note = note.Note(pattern)
+    new_note.storedInstrument = instrument.Piano()
+    output.append(new_note)
+
+output.write('midi', fp='generated_music.mid')
+
+print("Music generated successfully!")
