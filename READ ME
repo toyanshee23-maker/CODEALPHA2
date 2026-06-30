@@ -1,0 +1,136 @@
+# 🎵 AI Music Generator
+
+A Python-based music generation project that creates a new MIDI music file from an existing MIDI input. The project reads musical notes from a MIDI file, processes them, and generates a new sequence of notes to produce a unique composition.
+
+---
+
+## 📌 Features
+
+- 🎼 Reads MIDI files
+- 🎹 Extracts musical notes
+- 🎵 Generates a new music sequence
+- 💾 Saves the generated music as a new MIDI file
+- ⚡ Simple and lightweight Python implementation
+
+---
+
+## 🛠️ Technologies Used
+
+- Python 3
+- music21
+- NumPy
+- PrettyMIDI
+
+---
+
+## 📂 Project Structure
+
+```
+AI-Music-Generator/
+│── MUSIC.py
+│── generated_music.mid
+│── requirements.txt
+└── README.md
+```
+
+---
+
+## 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/AI-Music-Generator.git
+```
+
+Go to the project folder:
+
+```bash
+cd AI-Music-Generator
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ How to Run
+
+Place a MIDI file on your computer and update its path in `MUSIC.py`.
+
+Run:
+
+```bash
+python MUSIC.py
+```
+
+After execution, the program creates:
+
+```
+generated_music.mid
+```
+
+---
+
+## 📖 How It Works
+
+1. Loads an input MIDI file.
+2. Extracts musical notes from the file.
+3. Generates a new note sequence.
+4. Converts the sequence back into a MIDI file.
+5. Saves the generated music as `generated_music.mid`.
+
+---
+
+## 📸 Demo
+
+1. Run the Python program.
+2. Wait for the message:
+
+```
+Music generated successfully!
+```
+
+3. Open `generated_music.mid` using any MIDI player.
+
+---
+
+## 🔮 Future Improvements
+
+- Deep Learning (LSTM) music generation
+- Transformer-based music generation
+- Genre selection
+- Tempo control
+- Piano Roll visualization
+- Web interface using Streamlit
+
+---
+
+## 📄 Requirements
+
+```
+music21
+pretty_midi
+numpy
+```
+
+Install using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 📜 License
+
+This project is created for educational purposes.
+
+---
+
+## 👨‍💻 Author
+
+TOYANSHEE SINGH
